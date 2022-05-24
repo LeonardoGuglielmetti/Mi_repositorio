@@ -1,0 +1,205 @@
+body {
+    background-color: rgb(241, 240, 232);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    ;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.navBar {
+    display: flex;
+    background-color: rgb(41, 49, 51);
+}
+
+header .navBar .Logo {
+    font-size: 15px;
+    color: rgb(241, 240, 232);
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+header .navBar .ListPrin {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: 30%;
+}
+
+header .navBar .ListPrin .itemlist a {
+    color: rgb(241, 240, 232);
+    background-color: rgb(41, 49, 51);
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    font-size: 20px;
+    margin: 10px;
+}
+
+header .navBar .ListPrin .itemlist a:hover {
+    text-decoration: underline;
+    background-color: rgb(241, 240, 232);
+    color: rgb(41, 49, 51)
+}
+
+main.banner {
+    width: 100%;
+}
+
+main .txtPrin {
+    font-size: 45px;
+    text-align: center;
+
+}
+
+main .contenedorProyects {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2% 0 2% 0;
+}
+
+main .contenedorProyects .proyect {
+    width: 18rem;
+    border: 2px solid rgb(41, 49, 51);
+    background-color: rgb(241, 240, 232);
+    border-radius: 20px;
+    margin-bottom: 2%;
+}
+
+main .contenedorProyects .proyect .contImgCard .imgCard {
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 100%;
+    height: 24rem;
+}
+
+main .contenedorProyects .proyect .contTxtCard {
+    color: rgb(241, 240, 232);
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+main .contenedorProyects .proyect .contBtnCard {
+    margin-bottom: 1.5%;
+    display: flex;
+    justify-content: center;
+
+}
+
+main .contenedorProyects .proyect .contBtnCard .btnSeeMore {
+    background-image: linear-gradient(62deg, rgb(241, 240, 232) 0%, rgb(41, 49, 51) 100%);
+    width: 95%;
+    border-radius: 20px;
+    border: 0;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+main .contenedorProyects .proyect .contBtnCard .btnSeeMore:hover {
+    color: rgb(241, 240, 232);
+    border: 2px solid rgb(241, 240, 232);
+}
+
+
+
+video {
+    width: 100%;
+
+}
+
+.absolute {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    position: absolute;
+    text-align: right;
+    /*por que n o se va a la derecha?*/
+    display: flex;
+    justify-content: top;
+    /*necesito que estè arriba a la derecha y menu arriba a la izquierda*/
+
+}
+
+#Menu {
+    display: grid;
+    grid-template-areas:
+        "Navegation"
+        "Header"
+        "Principal"
+        "Footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+#CompanyName {
+    padding: 20px;
+}
+
+h1 {
+    margin: auto;
+    color: rgb(41, 49, 51);
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    margin: auto;
+    color: rgb(70, 72, 75);
+    text-align: center;
+}
+
+main {
+    grid-area: Principal;
+}
+
+#ConceptIntegration {
+    background-color: rgb(41, 49, 51);
+    color: rgb(241, 240, 232);
+    padding: 5px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#services {
+    display: flexbox;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: repeat(2, 100px);
+}
+
+div {
+    border: 10px;
+}
+
+#LifeCouldBeBetter {
+    background-color: rgb(41, 49, 51);
+    color: rgb(241, 240, 232);
+    padding: 5px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#Join {
+    margin: auto;
+    color: rgb(41, 49, 51);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+}
